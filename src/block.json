@@ -1,0 +1,23 @@
+{
+	"apiVersion": 3,
+	"name": "bookey/build",
+	"version": "0.0.1",
+	"title": "BooKey",
+	"description": "BooKey Table",
+	"category": "text",
+	"icon": "admin-network",
+	"textdomain": "bookey-grid",
+	"attributes": {
+		"link": {
+			"type": "text"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./editor.js",
+	"editorStyle": "file:./editor.css",
+	"viewScript": "file:./frontend.js",
+	"style": "file:./frontend.css",
+	"render": "file:./render.php"
+}

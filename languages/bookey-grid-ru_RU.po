@@ -1,0 +1,248 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookey Plugin 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bookeyplugin\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-02T19:49:07+03:00\n"
+"PO-Revision-Date: 2024-07-25 09:08+0000\n"
+"Language: ru_RU\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: bookey-grid\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1"
+
+#: index.php:236
+msgid "All week"
+msgstr "Вся неделя"
+
+#: index.php:255
+msgid "All year"
+msgstr "Весь год"
+
+#: index.php:263
+msgid "apr, "
+msgstr "апр, "
+
+#: index.php:267
+msgid "aug, "
+msgstr "авг, "
+
+#: index.php:140
+msgid "BooKey"
+msgstr "BooKey"
+
+#. Description of the plugin/theme
+msgid "BooKey hourly booking table."
+msgstr "Таблица почасовой аренды BooKey."
+
+#: index.php:311
+#| msgid "Bookey remote options read error: Incorrect owner key."
+msgid "BooKey remote options read error: Incorrect plugin key."
+msgstr "Ошибка чтений данных сервера BooKey: Неправильный ключ плагина."
+
+#: index.php:320
+msgid "BooKey server access error:"
+msgstr "Ошибка связи с сервером BooKey:"
+
+#: index.php:317
+msgid "BooKey server is unreachable!"
+msgstr "Сервер BooKey недоступен!"
+
+#: index.php:139
+#| msgid "Bookey Settings Page"
+msgid "BooKey Settings Page"
+msgstr "Страница настроек BooKey"
+
+#. Plugin Name of the plugin/theme
+msgid "BooKey table"
+msgstr "Таблица BooKey"
+
+#: index.php:410
+#| msgid "BooKey website"
+msgid "BooKey Website"
+msgstr "Сайт BooKey"
+
+#: index.php:412
+msgid "Change plugin settings"
+msgstr "Изменить настройки плагина"
+
+#: index.php:351
+#| msgid "Choose a language."
+msgid "Choose a language"
+msgstr "Укажите язык таблицы"
+
+#: index.php:271
+msgid "dec, "
+msgstr "дек, "
+
+#: index.php:261
+msgid "feb, "
+msgstr "фев, "
+
+#: index.php:245
+msgid "fr, "
+msgstr "пт, "
+
+#: index.php:362
+msgid "Hide"
+msgstr "Спрятать"
+
+#. Author URI of the plugin/theme
+msgid "https://https://github.com/vehere-ccuMaksym"
+msgstr "https://https://github.com/vehere-ccuMaksym"
+
+#: index.php:260
+msgid "jan, "
+msgstr "янв, "
+
+#: index.php:266
+msgid "jul, "
+msgstr "июл, "
+
+#: index.php:265
+msgid "jun, "
+msgstr "июн, "
+
+#: index.php:344
+msgid "Language"
+msgstr "Язык"
+
+#. Author of the plugin/theme
+msgid "Maksym"
+msgstr "Maksym"
+
+#: index.php:262
+msgid "mar, "
+msgstr "мар, "
+
+#: index.php:264
+msgid "may, "
+msgstr "май, "
+
+#: index.php:386
+msgid "Minimal Booking Step"
+msgstr "Минимальный шаг брони"
+
+#: index.php:388
+msgid "minutes"
+msgstr "минут"
+
+#: index.php:241
+msgid "mo, "
+msgstr "пн, "
+
+#: index.php:379
+msgid "Month"
+msgstr "Месяц"
+
+#: index.php:270
+msgid "nov, "
+msgstr "ноя, "
+
+#: index.php:269
+msgid "oct, "
+msgstr "окт, "
+
+#: index.php:340
+#| msgid "Place plugin key here."
+msgid "Place plugin key here"
+msgstr "Укажите тут ключ плагина"
+
+#: index.php:308
+msgid "Please set the following \"Website address\" in plugin settings: "
+msgstr "Пожалуйста укажите следующий \"Адрес сайта\" в настройках плагина:"
+
+#: index.php:337
+msgid "Plugin Key"
+msgstr "Ключ Плагина"
+
+#: index.php:325
+msgid "Plugin settings"
+msgstr "Настройки"
+
+#: index.php:246
+msgid "sa, "
+msgstr "сб, "
+
+#: index.php:417
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: index.php:382
+#| msgid "Select static table size."
+msgid "Select static table size"
+msgstr "Укажите постоянный размер таблицы"
+
+#: index.php:268
+msgid "sep, "
+msgstr "сен, "
+
+#: index.php:224
+msgid "Settings have been saved. Please reload the page."
+msgstr "Настройки сохранены. Пожалуйста, перезагрузите страницу."
+
+#: index.php:359
+msgid "Show"
+msgstr "Показать"
+
+#: index.php:355
+msgid "Show calendar"
+msgstr "Показать календарь"
+
+#: index.php:365
+#| msgid "Show or hide calendar and extra information on page."
+msgid "Show or hide calendar and extra information on page"
+msgstr "Показать или спрятать календарь и другую информацию на странице"
+
+#: index.php:229
+msgid "Sorry, you do not have permission to perform that action."
+msgstr "У Вас недостаточно прав для этих действий."
+
+#: index.php:247
+msgid "su, "
+msgstr "вс, "
+
+#: index.php:369
+msgid "Table size"
+msgstr "Размер таблицы"
+
+#: index.php:314
+msgid "Tariff is expired or not selected."
+msgstr "Тариф просрочен или не выбран."
+
+#: index.php:244
+msgid "th, "
+msgstr "чт, "
+
+#: index.php:242
+msgid "tu, "
+msgstr "вт, "
+
+#: index.php:376
+msgid "Two weeks"
+msgstr "Две недели"
+
+#: index.php:243
+msgid "we, "
+msgstr "ср, "
+
+#: index.php:373
+msgid "Week"
+msgstr "Неделя"
+
+#: index.php:398
+msgid "Working Days"
+msgstr "Рабочие дни"
+
+#: index.php:392
+msgid "Working Hours"
+msgstr "Время работы"
+
+#: index.php:404
+msgid "Working Months"
+msgstr "Рабочие месяцы"

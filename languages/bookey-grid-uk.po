@@ -1,0 +1,247 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookey Plugin 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bookeyplugin\n"
+"Last-Translator: \n"
+"Language-Team: Українська\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-02T19:49:07+03:00\n"
+"PO-Revision-Date: 2024-07-25 09:08+0000\n"
+"Language: uk\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: bookey-grid\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1"
+
+#: index.php:236
+msgid "All week"
+msgstr "Весь тиждень"
+
+#: index.php:255
+msgid "All year"
+msgstr "Увесь рік"
+
+#: index.php:263
+msgid "apr, "
+msgstr "квi,"
+
+#: index.php:267
+msgid "aug, "
+msgstr "сер,"
+
+#: index.php:140
+msgid "BooKey"
+msgstr "BooKey"
+
+#. Description of the plugin/theme
+msgid "BooKey hourly booking table."
+msgstr "Таблиця погодинної оренди BooKey."
+
+#: index.php:311
+msgid "BooKey remote options read error: Incorrect plugin key."
+msgstr "Помилка читання даних сервера BooKey: Неправильний ключ плагіна."
+
+#: index.php:320
+msgid "BooKey server access error:"
+msgstr "Помилка зв'язку із сервером BooKey:"
+
+#: index.php:317
+msgid "BooKey server is unreachable!"
+msgstr "Сервер BooKey недоступний!"
+
+#: index.php:139
+#| msgid "Bookey Settings"
+msgid "BooKey Settings Page"
+msgstr "Сторiнка налаштувань BooКey"
+
+#. Plugin Name of the plugin/theme
+msgid "BooKey table"
+msgstr "Таблиця BooKey"
+
+#: index.php:410
+msgid "BooKey Website"
+msgstr "Вебсайт BooKey"
+
+#: index.php:412
+msgid "Change plugin settings"
+msgstr "Змінити налаштування плагіна"
+
+#: index.php:351
+#| msgid "Choose a language."
+msgid "Choose a language"
+msgstr "Вкажіть мову таблиці"
+
+#: index.php:271
+msgid "dec, "
+msgstr "гру,"
+
+#: index.php:261
+msgid "feb, "
+msgstr "лют,"
+
+#: index.php:245
+msgid "fr, "
+msgstr "пт,"
+
+#: index.php:362
+msgid "Hide"
+msgstr "Приховати"
+
+#. Author URI of the plugin/theme
+msgid "https://https://github.com/vehere-ccuMaksym"
+msgstr "https://https://github.com/vehere-ccuMaksym"
+
+#: index.php:260
+msgid "jan, "
+msgstr "сiч,"
+
+#: index.php:266
+msgid "jul, "
+msgstr "лип,"
+
+#: index.php:265
+msgid "jun, "
+msgstr "чер,"
+
+#: index.php:344
+msgid "Language"
+msgstr "Мова"
+
+#. Author of the plugin/theme
+msgid "Maksym"
+msgstr "Maksym"
+
+#: index.php:262
+msgid "mar, "
+msgstr "бер,"
+
+#: index.php:264
+msgid "may, "
+msgstr "тра,"
+
+#: index.php:386
+msgid "Minimal Booking Step"
+msgstr "Мінімальний крок бронювання"
+
+#: index.php:388
+msgid "minutes"
+msgstr "хвилин"
+
+#: index.php:241
+msgid "mo, "
+msgstr "пн,"
+
+#: index.php:379
+msgid "Month"
+msgstr "Мiсяць"
+
+#: index.php:270
+msgid "nov, "
+msgstr "лис,"
+
+#: index.php:269
+msgid "oct, "
+msgstr "жов,"
+
+#: index.php:340
+#| msgid "Place plugin key here."
+msgid "Place plugin key here"
+msgstr "Вкажіть тут ключ плагіна"
+
+#: index.php:308
+msgid "Please set the following \"Website address\" in plugin settings: "
+msgstr ""
+"Будь ласка вкажіть наступну \"Адресу веб-сайту\" в налаштуваннях плагіна:"
+
+#: index.php:337
+msgid "Plugin Key"
+msgstr "Ключ Плагіна"
+
+#: index.php:325
+msgid "Plugin settings"
+msgstr "Налаштування"
+
+#: index.php:246
+msgid "sa, "
+msgstr "сб,"
+
+#: index.php:417
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: index.php:382
+#| msgid "Select static table size."
+msgid "Select static table size"
+msgstr "Оберiть постiйний розмiр таблицi"
+
+#: index.php:268
+msgid "sep, "
+msgstr "вер,"
+
+#: index.php:224
+msgid "Settings have been saved. Please reload the page."
+msgstr "Налаштування збережені. Будь ласка, перезавантажте сторінку."
+
+#: index.php:359
+msgid "Show"
+msgstr "Показати"
+
+#: index.php:355
+msgid "Show calendar"
+msgstr "Показувати календар"
+
+#: index.php:365
+#| msgid "Show or hide calendar and extra information on page."
+msgid "Show or hide calendar and extra information on page"
+msgstr "Показати чи приховати календар та додаткову iнформацiю на сторiнцi"
+
+#: index.php:229
+msgid "Sorry, you do not have permission to perform that action."
+msgstr "У вас недостатньо прав для цих дій."
+
+#: index.php:247
+msgid "su, "
+msgstr "нд,"
+
+#: index.php:369
+msgid "Table size"
+msgstr "Розмiр таблицi"
+
+#: index.php:314
+msgid "Tariff is expired or not selected."
+msgstr "Тариф прострочено або не обрано."
+
+#: index.php:244
+msgid "th, "
+msgstr "чт,"
+
+#: index.php:242
+msgid "tu, "
+msgstr "вт,"
+
+#: index.php:376
+msgid "Two weeks"
+msgstr "Два тижнi"
+
+#: index.php:243
+msgid "we, "
+msgstr "ср,"
+
+#: index.php:373
+msgid "Week"
+msgstr "Тиждень"
+
+#: index.php:398
+msgid "Working Days"
+msgstr "Робочі дні"
+
+#: index.php:392
+msgid "Working Hours"
+msgstr "Робочі години"
+
+#: index.php:404
+msgid "Working Months"
+msgstr "Робочі місяці"

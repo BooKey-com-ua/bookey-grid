@@ -1,0 +1,9 @@
+.wp-block-bookey-build {
+	min-height: 100px;
+	align-items: center;
+}
+
+.wp-block-bookey-build:before {
+	content: "BooKey Grid";
+	font-size: 24px;
+}

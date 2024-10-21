@@ -1,0 +1,246 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BooKey table\n"
+"POT-Creation-Date: 2024-07-25 12:07+0300\n"
+"PO-Revision-Date: 2024-07-25 11:58+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: index.php:139
+msgid "BooKey Settings Page"
+msgstr ""
+
+#: index.php:140
+msgid "BooKey"
+msgstr ""
+
+#: index.php:224
+msgid "Settings have been saved. Please reload the page."
+msgstr ""
+
+#: index.php:229
+msgid "Sorry, you do not have permission to perform that action."
+msgstr ""
+
+#: index.php:236
+msgid "All week"
+msgstr ""
+
+#: index.php:241
+msgid "mo, "
+msgstr ""
+
+#: index.php:242
+msgid "tu, "
+msgstr ""
+
+#: index.php:243
+msgid "we, "
+msgstr ""
+
+#: index.php:244
+msgid "th, "
+msgstr ""
+
+#: index.php:245
+msgid "fr, "
+msgstr ""
+
+#: index.php:246
+msgid "sa, "
+msgstr ""
+
+#: index.php:247
+msgid "su, "
+msgstr ""
+
+#: index.php:255
+msgid "All year"
+msgstr ""
+
+#: index.php:260
+msgid "jan, "
+msgstr ""
+
+#: index.php:261
+msgid "feb, "
+msgstr ""
+
+#: index.php:262
+msgid "mar, "
+msgstr ""
+
+#: index.php:263
+msgid "apr, "
+msgstr ""
+
+#: index.php:264
+msgid "may, "
+msgstr ""
+
+#: index.php:265
+msgid "jun, "
+msgstr ""
+
+#: index.php:266
+msgid "jul, "
+msgstr ""
+
+#: index.php:267
+msgid "aug, "
+msgstr ""
+
+#: index.php:268
+msgid "sep, "
+msgstr ""
+
+#: index.php:269
+msgid "oct, "
+msgstr ""
+
+#: index.php:270
+msgid "nov, "
+msgstr ""
+
+#: index.php:271
+msgid "dec, "
+msgstr ""
+
+#: index.php:308
+msgid "Please set the following \"Website address\" in plugin settings: "
+msgstr ""
+
+#: index.php:311
+msgid "BooKey remote options read error: Incorrect plugin key."
+msgstr ""
+
+#: index.php:314
+msgid "Tariff is expired or not selected."
+msgstr ""
+
+#: index.php:317
+msgid "BooKey server is unreachable!"
+msgstr ""
+
+#: index.php:320
+msgid "BooKey server access error:"
+msgstr ""
+
+#: index.php:325
+msgid "Plugin settings"
+msgstr ""
+
+#: index.php:337
+msgid "Plugin Key"
+msgstr ""
+
+#: index.php:340
+msgid "Place plugin key here"
+msgstr ""
+
+#: index.php:344
+msgid "Language"
+msgstr ""
+
+#: index.php:351
+msgid "Choose a language"
+msgstr ""
+
+#: index.php:355
+msgid "Show calendar"
+msgstr ""
+
+#: index.php:359
+msgid "Show"
+msgstr ""
+
+#: index.php:362
+msgid "Hide"
+msgstr ""
+
+#: index.php:365
+msgid "Show or hide calendar and extra information on page"
+msgstr ""
+
+#: index.php:369
+msgid "Table size"
+msgstr ""
+
+#: index.php:373
+msgid "Week"
+msgstr ""
+
+#: index.php:376
+msgid "Two weeks"
+msgstr ""
+
+#: index.php:379
+msgid "Month"
+msgstr ""
+
+#: index.php:382
+msgid "Select static table size"
+msgstr ""
+
+#: index.php:386
+msgid "Minimal Booking Step"
+msgstr ""
+
+#: index.php:388
+msgid "minutes"
+msgstr ""
+
+#: index.php:392
+msgid "Working Hours"
+msgstr ""
+
+#: index.php:398
+msgid "Working Days"
+msgstr ""
+
+#: index.php:404
+msgid "Working Months"
+msgstr ""
+
+#: index.php:410
+msgid "BooKey Website"
+msgstr ""
+
+#: index.php:412
+msgid "Change plugin settings"
+msgstr ""
+
+#: index.php:417
+msgid "Save Changes"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "BooKey table"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "BooKey hourly booking table."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Maksym"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://https://github.com/vehere-ccuMaksym"
+msgstr ""
