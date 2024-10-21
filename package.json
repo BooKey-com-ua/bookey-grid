@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
-    "chakra-react-select": "4.9.1",
     "dayzed": "^3.2.2",
     "luxon": "^3.4.4",
     "mobx": "6.13.1",
