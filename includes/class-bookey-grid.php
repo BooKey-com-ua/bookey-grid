@@ -283,10 +283,12 @@ class Bookey_Grid {
 
 			if ( is_object( $result ) && property_exists( $result, 'result' ) ) {
 				foreach ( array_keys( self::OPTION_DEFAULTS ) as $key ) {
-					if ( is_array( $result->$key ) ) {
-						$settings[ $key ] = implode( ',', $result->$key );
-					} else {
-						$settings[ $key ] = $result->$key;
+					if ( isset( $result->$key ) ) {
+						if ( is_array( $result->$key ) ) {
+							$settings[ $key ] = implode( ',', $result->$key );
+						} else {
+							$settings[ $key ] = $result->$key;
+						}
 					}
 				}
 				$settings['error'] = false;
