@@ -60,6 +60,7 @@ class Bookey_Grid {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'init', array( $this, 'register_custom_block' ) );
+		add_action( 'init', array( $this, 'set_language' ) );
 		add_action( 'rest_api_init', array( $this, 'rest_api_init' ) );
 		add_shortcode( 'bookey_grid', array( $this, 'shortcode' ) );
 
@@ -434,19 +435,6 @@ class Bookey_Grid {
 	 */
 	public function options_page() {
 		$option = $this->get_settings();
-
-		$languages = array(
-			'en' => 'en_US',
-			'uk' => 'uk',
-			'ru' => 'ru_RU',
-		);
-
-		$code = empty( $option['language'] ) ? '' : $option['language'];
-
-		if ( isset( $languages[ $code ] ) ) {
-			switch_to_locale( $languages[ $code ] );
-			$this->set_language();
-		}
 
 		$parts = explode( ',', $option['workingHours'] );
 		$from  = $parts[0];
