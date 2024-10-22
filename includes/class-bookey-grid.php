@@ -60,7 +60,6 @@ class Bookey_Grid {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'init', array( $this, 'register_custom_block' ) );
-		add_action( 'init', array( $this, 'languages' ) );
 		add_action( 'rest_api_init', array( $this, 'rest_api_init' ) );
 		add_shortcode( 'bookey_grid', array( $this, 'shortcode' ) );
 
@@ -151,8 +150,8 @@ class Bookey_Grid {
 	/**
 	 * Internationalization.
 	 */
-	public function languages() {
-		load_plugin_textdomain( 'bookey-grid', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	public function set_language() {
+		load_plugin_textdomain( 'bookey-grid', false, 'bookey-grid/languages' );
 	}
 
 	/**
@@ -436,6 +435,19 @@ class Bookey_Grid {
 	public function options_page() {
 		$option = $this->get_settings();
 
+		$languages = array(
+			'en' => 'en_US',
+			'uk' => 'uk',
+			'ru' => 'ru_RU',
+		);
+
+		$code = empty( $option['language'] ) ? '' : $option['language'];
+
+		if ( isset( $languages[ $code ] ) ) {
+			switch_to_locale( $languages[ $code ] );
+			$this->set_language();
+		}
+
 		$parts = explode( ',', $option['workingHours'] );
 		$from  = $parts[0];
 		$to    = $parts[1];
@@ -488,23 +500,7 @@ class Bookey_Grid {
 							</p>
 						</td>
 					</tr>
-					<tr>
-						<th scope="row"><?php esc_html_e( 'Login URL', 'bookey-grid' ); ?></th>
-						<td>
-							<input type="text" size="32"
-									name="<?php self::input_name( 'loginPage' ); ?>"
-									value="<?php echo esc_attr( $option['loginPage'] ); ?>">
-							<p class="description">
-								<?php esc_html_e( 'URL of login page, leave empty if you use your standard:', 'bookey-grid' ); ?>
-								<code><?php echo esc_html( wp_login_url() ); ?></code>
-							</p>
-							<p class="description">
-								<?php esc_html_e( 'Your website visitors must be logged in for booking.', 'bookey-grid' ); ?>
-							</p>
-						</td>
-					</tr>
 
-					</tbody>
 				</table>
 				<table style="<?php echo 1 === (int) $option['error'] ? 'display: none;' : ''; ?>"
 						class="form-table" role="presentation">
@@ -523,6 +519,21 @@ class Bookey_Grid {
 								</option>
 							</select>
 							<p class="description"><?php esc_html_e( 'Choose a language', 'bookey-grid' ); ?></p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><?php esc_html_e( 'Login URL', 'bookey-grid' ); ?></th>
+						<td>
+							<input type="text" size="32"
+									name="<?php self::input_name( 'loginPage' ); ?>"
+									value="<?php echo esc_attr( $option['loginPage'] ); ?>">
+							<p class="description">
+								<?php esc_html_e( 'URL of login page, leave empty if you use your standard:', 'bookey-grid' ); ?>
+								<code><?php echo esc_html( wp_login_url() ); ?></code>
+							</p>
+							<p class="description">
+								<?php esc_html_e( 'Your website visitors must be logged in for booking.', 'bookey-grid' ); ?>
+							</p>
 						</td>
 					</tr>
 					<tr>
@@ -606,6 +617,7 @@ class Bookey_Grid {
 				</table>
 
 				<?php submit_button( 'Save Changes' ); ?>
+				<?php restore_previous_locale(); ?>
 
 			</form>
 		</div>
