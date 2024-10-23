@@ -60,6 +60,7 @@ class Bookey_Grid {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'init', array( $this, 'register_custom_block' ) );
+		add_action( 'init', array( $this, 'set_language' ) );
 		add_action( 'rest_api_init', array( $this, 'rest_api_init' ) );
 		add_shortcode( 'bookey_grid', array( $this, 'shortcode' ) );
 
@@ -135,6 +136,13 @@ class Bookey_Grid {
 
 		if ( '' !== ! $input['ownerKey'] ) {
 			$data = $this->get_service_data( $input['ownerKey'] );
+
+			$subscription = empty( $data['subscription'] ) ? '' : $data['subscription'];
+
+			$settings['subscription'] = $subscription;
+			if ( ! $subscription || 'demo' === $subscription ) {
+				$settings['days'] = '7';
+			}
 		} else {
 			$data = array(
 				'error'        => 1,
@@ -151,7 +159,7 @@ class Bookey_Grid {
 	 * Internationalization.
 	 */
 	public function set_language() {
-		load_plugin_textdomain( 'bookey-grid', false, 'bookey-grid/languages' );
+		load_plugin_textdomain( 'bookey-grid', false, basename( dirname( __DIR__ ) ) . '/languages' );
 	}
 
 	/**
@@ -435,19 +443,6 @@ class Bookey_Grid {
 	public function options_page() {
 		$option = $this->get_settings();
 
-		$languages = array(
-			'en' => 'en_US',
-			'uk' => 'uk',
-			'ru' => 'ru_RU',
-		);
-
-		$code = empty( $option['language'] ) ? '' : $option['language'];
-
-		if ( isset( $languages[ $code ] ) ) {
-			switch_to_locale( $languages[ $code ] );
-			$this->set_language();
-		}
-
 		$parts = explode( ',', $option['workingHours'] );
 		$from  = $parts[0];
 		$to    = $parts[1];
@@ -557,13 +552,23 @@ class Bookey_Grid {
 								<option value="7" <?php echo '7' === $option['days'] ? 'selected' : ''; ?>>
 									<?php esc_html_e( 'Week', 'bookey-grid' ); ?>
 								</option>
+								<?php
+								if ( empty( $option['subscription'] ) || 'demo' === $option['subscription'] ) :
+									?>
+							</select>
+							<span class="description"><?php esc_html_e( 'Only `Week` option is available in demo subscription', 'bookey-grid' ); ?></span>
+							<?php else : ?>
 								<option value="14" <?php echo '14' === $option['days'] ? 'selected' : ''; ?>>
 									<?php esc_html_e( 'Two weeks', 'bookey-grid' ); ?>
 								</option>
 								<option value="30" <?php echo '30' === $option['days'] ? 'selected' : ''; ?>>
 									<?php esc_html_e( 'Month', 'bookey-grid' ); ?>
 								</option>
-							</select>
+								</select>
+
+								<?php
+							endif;
+							?>
 							<p class="description"><?php esc_html_e( 'Select static table size', 'bookey-grid' ); ?></p>
 						</td>
 					</tr>
