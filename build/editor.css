@@ -1,15 +1,1 @@
-/*!************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/lib/editor.css ***!
-  \************************************************************************************************************************************************************************/
-.wp-block-bookey-build {
-	min-height: 100px;
-	align-items: center;
-}
-
-.wp-block-bookey-build:before {
-	content: "BooKey Grid";
-	font-size: 24px;
-}
-
-
-/*# sourceMappingURL=editor.css.map*/
+.wp-block-bookey-build{align-items:center;min-height:100px}.wp-block-bookey-build:before{content:"BooKey Grid";font-size:24px}
