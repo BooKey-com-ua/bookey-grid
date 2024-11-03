@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: BooKey Table (Updated for WPorg - A.K.)
+ * Plugin Name: BooKey Table
  * Description: BooKey hourly booking table.
  * Version: 0.2.0
  * Author: BooKey

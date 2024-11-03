@@ -487,7 +487,7 @@ class Bookey_Grid {
 									name="<?php self::input_name( 'ownerKey' ); ?>"
 									value="<?php echo esc_attr( $option['ownerKey'] ); ?>">
 							<p class="description">
-								<?php esc_html_e( 'On submitting this form the BooKey server receives the plugin key and returns your account settings (booking step, working hours, days, months).', 'bookey-grid' ); ?>
+								<?php esc_html_e( 'On submitting this form the BooKey server receives the plugin key and returns your account settings', 'bookey-grid' ); ?>
 							</p>
 							<p class="description">
 								<a target="_blank"
@@ -523,7 +523,7 @@ class Bookey_Grid {
 									name="<?php self::input_name( 'loginPage' ); ?>"
 									value="<?php echo esc_attr( $option['loginPage'] ); ?>">
 							<p class="description">
-								<?php esc_html_e( 'URL of login page, leave empty if you use your standard:', 'bookey-grid' ); ?>
+								<?php esc_html_e( 'Leave it empty if you use standard URL:', 'bookey-grid' ); ?>
 								<code><?php echo esc_html( wp_login_url() ); ?></code>
 							</p>
 							<p class="description">
@@ -556,7 +556,7 @@ class Bookey_Grid {
 								if ( empty( $option['subscription'] ) || 'demo' === $option['subscription'] ) :
 									?>
 							</select>
-							<span class="description"><?php esc_html_e( 'Only `Week` option is available in demo subscription', 'bookey-grid' ); ?></span>
+							<span class="description"><?php esc_html_e( 'Only `Week` option is available in basic subscription', 'bookey-grid' ); ?></span>
 							<?php else : ?>
 								<option value="14" <?php echo '14' === $option['days'] ? 'selected' : ''; ?>>
 									<?php esc_html_e( 'Two weeks', 'bookey-grid' ); ?>
