@@ -27,6 +27,7 @@ Features include:
 
 Official [BooKey](https://bookey.ltd/) WordPress plugin by BooKey team. 
 For more information please visit our [plugin page](https://bookey.ltd/plugin).
+For getting plugin code, please visit [GitHub](https://github.com/BooKey-com-ua/bookey-grid).
 
 
 == Installation ==
@@ -54,7 +55,7 @@ If you have an issue or question please submit a support ticket and we'll get ba
 
 6) With use of 'Language' option you can set the table language. It does not depends on website language and will stay same according to language you selected here.
 
-6) With use of 'Show calendar' option you can show or hide calendar and extra information on page.
+7) With use of 'Show calendar' option you can show or hide calendar and extra information on page.
 
 == Frequently Asked Questions ==
 
