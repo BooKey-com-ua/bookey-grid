@@ -1,5 +1,5 @@
 //import from vendors
-import { FC, lazy, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { 
   Button, Flex, IconButton, Menu, MenuButton, MenuItemOption, MenuList, MenuOptionGroup, Text 
 } from '@chakra-ui/react';
@@ -7,12 +7,11 @@ import { observer } from 'mobx-react';
 import { DateTime } from 'luxon';
 
 //import from components
+import BottomSlider from './Elements/BottomSlider';
+import Label from './Elements/Label';
 import RequestWidget from './Elements/RequestWidget/RequestWidget';
-
-const RoomBookingGrid = lazy(() => import('./Elements/RoomBookingGrid/RoomBookingGrid'));
-const BottomSlider = lazy(() => import('./Elements/BottomSlider'));
-const Label = lazy(() => import('./Elements/Label'));
-const Calendar = lazy(() => import('./Elements/Calendar'));
+import { Calendar } from './Elements/Calendar';
+import RoomBookingGrid from './Elements/RoomBookingGrid/RoomBookingGrid';
 
 // imports from constants
 import { RESULT_MESSAGE } from './Constants/messages';
