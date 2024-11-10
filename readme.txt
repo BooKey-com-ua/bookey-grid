@@ -61,6 +61,8 @@ If you have an issue or question please submit a support ticket and we'll get ba
 
 Plugin is checking the current subscription status by sending request to [BooKey](https://bookey.ltd/) website once per 24 hour. 
 In case if tariff is expired, the booking option will stop working for visitor and website admins.
+When the new tariff is selected on the [plugin settings](https://bookey.ltd/plugin) page, it will be automatically implemented on your website
+in next 24 hours or by immediate settings update after pressing 'Save Settings' on BooKey plugin page in admin console of your website.
 
 == Frequently Asked Questions ==
 
