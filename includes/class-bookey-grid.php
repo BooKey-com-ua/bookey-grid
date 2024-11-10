@@ -42,6 +42,7 @@ class Bookey_Grid {
 		'calendar'             => true,
 		'days'                 => '7',
 		'loginPage'            => '',
+		'lastCheck'            => 0,
 	);
 
 	/**
@@ -68,6 +69,17 @@ class Bookey_Grid {
 			'_id'   => '',
 			'admin' => false,
 		);
+
+		add_action(
+			'bookey_check_subscription',
+			array(
+				$this,
+				'check_subscription',
+			)
+		);
+		if ( ! wp_next_scheduled( 'bookey_check_subscription' ) ) {
+			wp_schedule_event( time(), 'daily', 'bookey_check_subscription' );
+		}
 	}
 
 	/**
@@ -149,10 +161,8 @@ class Bookey_Grid {
 				'errorMessage' => 'Unknown error',
 			);
 		}
-
-		$settings = array_merge( $settings, $data );
-
-		return $settings;
+		$data['lastCheck'] = time();
+		return array_merge( $settings, $data );
 	}
 
 	/**
@@ -442,6 +452,10 @@ class Bookey_Grid {
 	 */
 	public function options_page() {
 		$option = $this->get_settings();
+		if ( time() - (int) $option['ownerKey'] > MINUTE_IN_SECONDS ) {
+			$this->check_subscription();
+			$option = $this->get_settings();
+		}
 
 		$parts = explode( ',', $option['workingHours'] );
 		$from  = $parts[0];
@@ -620,17 +634,14 @@ class Bookey_Grid {
 					</tr>
 
 				</table>
-
-				<?php submit_button( 'Save Changes' ); ?>
-				<?php restore_previous_locale(); ?>
-
+				<?php submit_button( esc_html( __( 'Save Changes', 'bookey-grid' ) ) ); ?>
 			</form>
 		</div>
 		<?php
 	}
 
 	/**
-	 * Sends request to Bookey server
+	 * Send request to Bookey server.
 	 *
 	 * @param \WP_REST_Request $request WP_REST_Request.
 	 *
@@ -710,7 +721,9 @@ class Bookey_Grid {
 	}
 
 	/**
-	 * Permission callback, @return bool
+	 * Permission callback.
+	 *
+	 * @return bool
 	 *
 	 * @see \Bookey_Grid::rest_api_init().
 	 */
@@ -719,7 +732,9 @@ class Bookey_Grid {
 	}
 
 	/**
-	 * Permission callback, @return bool
+	 * Permission callback.
+	 *
+	 * @return bool
 	 *
 	 * @see \Bookey_Grid::rest_api_init().
 	 */
@@ -728,7 +743,7 @@ class Bookey_Grid {
 	}
 
 	/**
-	 * Permission callback
+	 * Permission callback.
 	 *
 	 * @param \WP_REST_Request $request WP_REST_Request.
 	 *
@@ -786,6 +801,13 @@ class Bookey_Grid {
 				'permission_callback' => array( $this, 'is_admin' ),
 			)
 		);
+	}
+
+	/**
+	 * Check subscription changes (upgrade/downgrade/expire, etc.).
+	 */
+	public function check_subscription() {
+		update_option( self::OPTION_NAME, $this->sanitize_settings( $this->get_settings() ) );
 	}
 }
 
