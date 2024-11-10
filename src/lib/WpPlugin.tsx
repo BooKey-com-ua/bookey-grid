@@ -1,5 +1,5 @@
 //import from vendors
-import { FC, useEffect, useState } from 'react';
+import { FC, lazy, useEffect, useState } from 'react';
 import { 
   Button, Flex, IconButton, Menu, MenuButton, MenuItemOption, MenuList, MenuOptionGroup, Text 
 } from '@chakra-ui/react';
@@ -7,12 +7,12 @@ import { observer } from 'mobx-react';
 import { DateTime } from 'luxon';
 
 //import from components
-import BottomSlider from './Elements/BottomSlider';
-import Label from './Elements/Label';
 import RequestWidget from './Elements/RequestWidget/RequestWidget';
-import { Calendar } from './Elements/Calendar';
 
-import RoomBookingGrid from './Elements/RoomBookingGrid/RoomBookingGrid';
+const RoomBookingGrid = lazy(() => import('./Elements/RoomBookingGrid/RoomBookingGrid'));
+const BottomSlider = lazy(() => import('./Elements/BottomSlider'));
+const Label = lazy(() => import('./Elements/Label'));
+const Calendar = lazy(() => import('./Elements/Calendar'));
 
 // imports from constants
 import { RESULT_MESSAGE } from './Constants/messages';
@@ -150,9 +150,9 @@ const WpPlugin: FC<Props> = ({ error, language = 'en', plugin = DEFAULT_PLUGIN, 
     <Flex flexDir="column" id="BooKeyWpPlugin" pos="relative" p={[0, 8, 10]} py={[4, 8, 10]}>
       <Flex flexDir={['column', 'row']} justifyContent='center'>
         {withCalendar && (
-          <Flex flexDir="column" id='BBBB' float="left" mr={[0, 8]} minW="fit-content">
-            <Flex display={[hideCalendar ? 'none' : 'flex', 'flex']} justifyContent={['center', 'flex-start']} mt={[4, 0]}>
-              <Calendar disabled={isLimited} lang={language} onDateSelected={handleDateChange} selected={date} />
+          <Flex flexDir="column" float="left" mr={[0, 8]} minW="fit-content">
+            <Flex display={[hideCalendar ? 'none' : 'flex', 'flex']} justifyContent={['center', 'flex-start']} mb={[4, 0]}>
+              <Calendar disabled={isLimited} firstDayOfWeek={1} lang={language} onDateSelected={handleDateChange} selected={date} />
             </Flex>
             { !isLimited && (
               <>

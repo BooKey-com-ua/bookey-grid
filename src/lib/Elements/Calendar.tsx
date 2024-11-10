@@ -31,7 +31,7 @@ type Props = {
 export const Calendar: FC<Props> = ({
   blockDaysClick,
   disabled,
-  firstDayOfWeek = 1,
+  firstDayOfWeek,
   lang = 'en',
   minDate,
   onDateSelected = () => null,

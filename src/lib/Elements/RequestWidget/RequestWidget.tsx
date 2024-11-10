@@ -1,11 +1,11 @@
 // import from vendors
-import { FC, useState } from 'react';
+import { FC, lazy, useState } from 'react';
 import { Button, CloseButton, Flex, Link, Text, useToast } from '@chakra-ui/react';
 import { observer } from 'mobx-react';
 import { DateTime } from 'luxon';
 
 // import from components
-import SubmitModal from '../SubmitModal/SubmitModal';
+const SubmitModal = lazy(() => import('../SubmitModal/SubmitModal'));
 
 // imports from constants
 import { RESULT_MESSAGE } from '../../Constants/messages';
