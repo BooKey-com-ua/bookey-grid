@@ -1,7 +1,7 @@
 {
   "name": "scripts",
-  "version": "0.0.1",
-  "description": "Gutenberg editor block setup",
+  "version": "0.2.0",
+  "description": "WordPress BooKey Table plugin",
   "main": "index.js",
   "scripts": {
     "build": "wp-scripts build --webpack-src-dir=src/ --output-path=build/",
