@@ -1,12 +1,12 @@
-# BooKey Table plug-in
+# BooKey Table plugin
 
-A WordPress plug-in that provides hourly based booking table on your WordPress website.
+A plugin that provides hourly based booking table on your WordPress website.
 
 ## Compatibility with WordPress versions
 
 **The current version of the plugin (on the `master` branch) works only with versions higher 5.2**.
 
-For a lower version please try it on your `risk`.
+For a lower version please try it on your own **risk**.
 
 ## Compilation
 

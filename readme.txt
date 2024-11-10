@@ -57,11 +57,15 @@ If you have an issue or question please submit a support ticket and we'll get ba
 
 7) With use of 'Show calendar' option you can show or hide calendar and extra information on page.
 
+== Important notes ==
+
+Plugin is checking the current subscription status by sending request to [BooKey](https://bookey.ltd/) website once per 24 hour. 
+In case if tariff is expired, the booking option will stop working for visitor and website admins.
+
 == Frequently Asked Questions ==
 
 Please contact us via email/Viber/Telegram/Facebook. You can find our contacts on our [BooKey](https://bookey.ltd/) website.
 
-== Screenshots ==
 
 
 == Changelog ==
