@@ -3,12 +3,12 @@ msgstr ""
 "Project-Id-Version: Bookey Plugin 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bookeyplugin\n"
 "Last-Translator: \n"
-"Language-Team: Russian\n"
+"Language-Team: Русский\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-02T19:49:07+03:00\n"
-"PO-Revision-Date: 2024-11-03 22:56+0000\n"
+"PO-Revision-Date: 2024-11-10 19:13+0000\n"
 "Language: ru_RU\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: bookey-grid\n"
@@ -16,30 +16,30 @@ msgstr ""
 "n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
 "X-Loco-Version: 2.6.11; wp-6.6.2"
 
-#: includes/class-bookey-grid.php:342
+#: includes/class-bookey-grid.php:352
 msgid "All week"
 msgstr "Вся неделя"
 
-#: includes/class-bookey-grid.php:383
+#: includes/class-bookey-grid.php:393
 msgid "All year"
 msgstr "Весь год"
 
-#: includes/class-bookey-grid.php:398
+#: includes/class-bookey-grid.php:408
 #| msgid "apr,"
 msgid "apr"
 msgstr "апр"
 
-#: includes/class-bookey-grid.php:410
+#: includes/class-bookey-grid.php:420
 #| msgid "aug,"
 msgid "aug"
 msgstr "авг"
 
 #. Author of the plugin/theme
-#: includes/class-bookey-grid.php:254
+#: includes/class-bookey-grid.php:264
 msgid "BooKey"
 msgstr "BooKey"
 
-#: includes/class-bookey-grid.php:476
+#: includes/class-bookey-grid.php:490
 msgid "Bookey Grid Plugin settings"
 msgstr "Настройки плагина Bookey Grid"
 
@@ -47,20 +47,20 @@ msgstr "Настройки плагина Bookey Grid"
 msgid "BooKey hourly booking table."
 msgstr "Таблица почасовой аренды BooKey."
 
-#: includes/class-bookey-grid.php:460
+#: includes/class-bookey-grid.php:474
 #| msgid "Bookey remote options read error: Incorrect owner key."
 msgid "BooKey remote options read error: Incorrect plugin key."
 msgstr "Ошибка чтений данных сервера BooKey: Неправильный ключ плагина."
 
-#: includes/class-bookey-grid.php:469
+#: includes/class-bookey-grid.php:483
 msgid "BooKey server access error:"
 msgstr "Ошибка связи с сервером BooKey:"
 
-#: includes/class-bookey-grid.php:466
+#: includes/class-bookey-grid.php:480
 msgid "BooKey server is unreachable!"
 msgstr "Сервер BooKey недоступен!"
 
-#: includes/class-bookey-grid.php:253
+#: includes/class-bookey-grid.php:263
 #| msgid "Bookey Settings Page"
 msgid "BooKey Settings Page"
 msgstr "Страница настроек BooKey"
@@ -69,36 +69,36 @@ msgstr "Страница настроек BooKey"
 msgid "BooKey Table"
 msgstr "Таблица BooKey"
 
-#: includes/class-bookey-grid.php:611
+#: includes/class-bookey-grid.php:625
 #| msgid "BooKey website"
 msgid "BooKey Website"
 msgstr "Сайт BooKey"
 
-#: includes/class-bookey-grid.php:616
+#: includes/class-bookey-grid.php:630
 msgid "Change plugin settings"
 msgstr "Изменить настройки плагина"
 
-#: includes/class-bookey-grid.php:516
+#: includes/class-bookey-grid.php:530
 #| msgid "Choose a language."
 msgid "Choose a language"
 msgstr "Укажите язык таблицы"
 
-#: includes/class-bookey-grid.php:422
+#: includes/class-bookey-grid.php:432
 #| msgid "dec,"
 msgid "dec"
 msgstr "дек"
 
-#: includes/class-bookey-grid.php:392
+#: includes/class-bookey-grid.php:402
 #| msgid "feb,"
 msgid "feb"
 msgstr "фев"
 
-#: includes/class-bookey-grid.php:360
+#: includes/class-bookey-grid.php:370
 #| msgid "fr,"
 msgid "fr"
 msgstr "пт"
 
-#: includes/class-bookey-grid.php:542
+#: includes/class-bookey-grid.php:556
 msgid "Hide"
 msgstr "Спрятать"
 
@@ -106,71 +106,71 @@ msgstr "Спрятать"
 msgid "https://bookey.ltd"
 msgstr "https://bookey.ltd"
 
-#: includes/class-bookey-grid.php:389
+#: includes/class-bookey-grid.php:399
 #| msgid "jan,"
 msgid "jan"
 msgstr "янв"
 
-#: includes/class-bookey-grid.php:407
+#: includes/class-bookey-grid.php:417
 #| msgid "jul,"
 msgid "jul"
 msgstr "июл"
 
-#: includes/class-bookey-grid.php:404
+#: includes/class-bookey-grid.php:414
 #| msgid "jun,"
 msgid "jun"
 msgstr "июн"
 
-#: includes/class-bookey-grid.php:503
+#: includes/class-bookey-grid.php:517
 msgid "Language"
 msgstr "Язык"
 
-#: includes/class-bookey-grid.php:526
+#: includes/class-bookey-grid.php:540
 msgid "Leave it empty if you use standard URL:"
 msgstr "Оставьте поле пустым, если вы используете стандартный URL:"
 
-#: includes/class-bookey-grid.php:520
+#: includes/class-bookey-grid.php:534
 msgid "Login URL"
 msgstr "Страница логина"
 
-#: includes/class-bookey-grid.php:395
+#: includes/class-bookey-grid.php:405
 #| msgid "mar,"
 msgid "mar"
 msgstr "мар"
 
-#: includes/class-bookey-grid.php:401
+#: includes/class-bookey-grid.php:411
 #| msgid "may,"
 msgid "may"
 msgstr "май"
 
-#: includes/class-bookey-grid.php:581
+#: includes/class-bookey-grid.php:595
 msgid "Minimal Booking Step"
 msgstr "Минимальный шаг брони"
 
-#: includes/class-bookey-grid.php:585
+#: includes/class-bookey-grid.php:599
 msgid "minutes"
 msgstr "минут"
 
-#: includes/class-bookey-grid.php:348
+#: includes/class-bookey-grid.php:358
 #| msgid "mo,"
 msgid "mo"
 msgstr "пн"
 
-#: includes/class-bookey-grid.php:565
+#: includes/class-bookey-grid.php:579
 msgid "Month"
 msgstr "Месяц"
 
-#: includes/class-bookey-grid.php:419
+#: includes/class-bookey-grid.php:429
 #| msgid "nov,"
 msgid "nov"
 msgstr "ноя"
 
-#: includes/class-bookey-grid.php:416
+#: includes/class-bookey-grid.php:426
 #| msgid "oct,"
 msgid "oct"
 msgstr "окт"
 
-#: includes/class-bookey-grid.php:490
+#: includes/class-bookey-grid.php:504
 msgid ""
 "On submitting this form the BooKey server receives the plugin key and "
 "returns your account settings"
@@ -178,99 +178,103 @@ msgstr ""
 "При отправке этой формы, сервер BooKey получает ключ плагина и возвращает "
 "настройки вашей учетной записи."
 
-#: includes/class-bookey-grid.php:559
+#: includes/class-bookey-grid.php:573
 #| msgid "Only `Week` option is available in demo subscription"
 msgid "Only `Week` option is available in basic subscription"
 msgstr "В базовом тарифе доступна только опция «Неделя»."
 
-#: includes/class-bookey-grid.php:457
+#: includes/class-bookey-grid.php:471
 msgid "Please set the following \"Website address\" in plugin settings: "
 msgstr "Пожалуйста укажите следующий \"Адрес сайта\" в настройках плагина:"
 
-#: includes/class-bookey-grid.php:484
+#: includes/class-bookey-grid.php:498
 msgid "Plugin Key"
 msgstr "Ключ Плагина"
 
-#: includes/class-bookey-grid.php:363
+#: includes/class-bookey-grid.php:373
 #| msgid "sa,"
 msgid "sa"
 msgstr "сб"
 
-#: includes/class-bookey-grid.php:572
+#: includes/class-bookey-grid.php:637
+msgid "Save Changes"
+msgstr "Сохранить Изменения"
+
+#: includes/class-bookey-grid.php:586
 #| msgid "Select static table size."
 msgid "Select static table size"
 msgstr "Укажите постоянный размер таблицы"
 
-#: includes/class-bookey-grid.php:413
+#: includes/class-bookey-grid.php:423
 #| msgid "sep,"
 msgid "sep"
 msgstr "сен"
 
-#: includes/class-bookey-grid.php:539
+#: includes/class-bookey-grid.php:553
 msgid "Show"
 msgstr "Показать"
 
-#: includes/class-bookey-grid.php:535
+#: includes/class-bookey-grid.php:549
 msgid "Show calendar"
 msgstr "Показать календарь"
 
-#: includes/class-bookey-grid.php:545
+#: includes/class-bookey-grid.php:559
 #| msgid "Show or hide calendar and extra information on page."
 msgid "Show or hide calendar and extra information on page"
 msgstr "Показать или спрятать календарь и другую информацию на странице"
 
-#: includes/class-bookey-grid.php:366
+#: includes/class-bookey-grid.php:376
 #| msgid "su,"
 msgid "su"
 msgstr "вс"
 
-#: includes/class-bookey-grid.php:549
+#: includes/class-bookey-grid.php:563
 msgid "Table size"
 msgstr "Размер таблицы"
 
-#: includes/class-bookey-grid.php:463
+#: includes/class-bookey-grid.php:477
 msgid "Tariff is expired or not selected."
 msgstr "Тариф просрочен или не выбран."
 
-#: includes/class-bookey-grid.php:494
+#: includes/class-bookey-grid.php:508
 msgid "Terms &amp; Conditions"
 msgstr "Правила и условия"
 
-#: includes/class-bookey-grid.php:357
+#: includes/class-bookey-grid.php:367
 #| msgid "th,"
 msgid "th"
 msgstr "чт"
 
-#: includes/class-bookey-grid.php:351
+#: includes/class-bookey-grid.php:361
 #| msgid "tu,"
 msgid "tu"
 msgstr "вт"
 
-#: includes/class-bookey-grid.php:562
+#: includes/class-bookey-grid.php:576
 msgid "Two weeks"
 msgstr "Две недели"
 
-#: includes/class-bookey-grid.php:354
+#: includes/class-bookey-grid.php:364
 #| msgid "we,"
 msgid "we"
 msgstr "ср"
 
-#: includes/class-bookey-grid.php:553
+#: includes/class-bookey-grid.php:567
 msgid "Week"
 msgstr "Неделя"
 
-#: includes/class-bookey-grid.php:597
+#: includes/class-bookey-grid.php:611
 msgid "Working Days"
 msgstr "Рабочие дни"
 
-#: includes/class-bookey-grid.php:589
+#: includes/class-bookey-grid.php:603
 msgid "Working Hours"
 msgstr "Время работы"
 
-#: includes/class-bookey-grid.php:603
+#: includes/class-bookey-grid.php:617
 msgid "Working Months"
 msgstr "Рабочие месяцы"
 
-#: includes/class-bookey-grid.php:530
+#: includes/class-bookey-grid.php:544
 msgid "Your website visitors must be logged in for booking."
 msgstr "Посетители вашего сайта должны войти в систему для бронирования."
