@@ -64,6 +64,24 @@ In case if tariff is expired, the booking option will stop working for visitor a
 When the new tariff is selected on the [plugin settings](https://bookey.ltd/plugin) page, it will be automatically implemented on your website
 in next 24 hours or by immediate settings update after pressing 'Save Settings' on BooKey plugin page in admin console of your website.
 
+== Source code ==
+
+The plugin 'build' folder contains only compiled files. To get source code please visit plugin [GitHub](https://github.com/BooKey-com-ua/bookey-grid) page.
+
+The project folders structure includes:
+* 'build' folder contains compiled files;
+* 'includes' folder contains WordPress actions and filters file;
+* 'languages' folder contains plugin multilingual support files;
+* 'src' folder contains TypeScrypt source code.
+
+To reproduce the 'build' folder the plugin please use the following commands:
+  ```
+  git clone https://github.com/BooKey-com-ua/bookey-grid.git
+  cd bookey-grid
+  npm install
+  npm run build
+  ```
+
 == Frequently Asked Questions ==
 
 Please contact us via email/Viber/Telegram/Facebook. You can find our contacts on our [BooKey](https://bookey.ltd/) website.
