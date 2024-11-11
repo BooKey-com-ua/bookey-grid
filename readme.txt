@@ -74,7 +74,7 @@ The project folders structure includes:
 * 'languages' folder contains plugin multilingual support files;
 * 'src' folder contains TypeScrypt source code.
 
-To reproduce the 'build' folder the plugin please use the following commands:
+To reproduce the 'build' folder of the plugin please use the following commands:
   ```
   git clone https://github.com/BooKey-com-ua/bookey-grid.git
   cd bookey-grid
