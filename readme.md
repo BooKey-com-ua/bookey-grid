@@ -4,7 +4,7 @@ A plugin that provides hourly based booking table on your WordPress website.
 
 ## Compatibility with WordPress versions
 
-**The current version of the plugin (on the `master` branch) works only with versions higher 5.2**.
+**The current version of the plugin (on the `master` branch) works only with WordPress versions higher than 6.6**.
 
 For a lower version please try it on your own **risk**.
 
@@ -45,3 +45,10 @@ npm run build
 6. With use of 'Language' option you can set the table language. It does not depends on website language and will stay same according to language you selected here.
 7. With use of 'Show calendar' option you can show or hide calendar and extra information on page.
 
+### Important notes ###
+
+Plugin is checking the current subscription status by sending request to [BooKey](https://bookey.ltd/) website once per 24 hour. 
+In case if tariff is expired, the booking option will stop working for visitor and website admins.
+When the new tariff is selected on the [plugin settings](https://bookey.ltd/plugin) page, it will be automatically implemented on your website
+in next 24 hours or by immediate settings update after pressing 'Save Settings' on BooKey plugin page in admin console of your website.
+[BooKey Privacy Policy](https://bookey.ltd/en/docs/privacy)
