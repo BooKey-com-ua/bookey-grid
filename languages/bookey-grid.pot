@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: BooKey Table\n"
-"POT-Creation-Date: 2024-11-10 21:13+0200\n"
-"PO-Revision-Date: 2024-11-10 21:13+0200\n"
+"POT-Creation-Date: 2024-11-13 18:58+0200\n"
+"PO-Revision-Date: 2024-11-13 18:58+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,226 +21,230 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/class-bookey-grid.php:263
+#: includes/class-bookey-grid.php:256
 msgid "BooKey Settings Page"
 msgstr ""
 
 #. Author of the plugin/theme
-#: includes/class-bookey-grid.php:264
+#: includes/class-bookey-grid.php:257
 msgid "BooKey"
 msgstr ""
 
-#: includes/class-bookey-grid.php:352
+#: includes/class-bookey-grid.php:345
 msgid "All week"
 msgstr ""
 
-#: includes/class-bookey-grid.php:358
+#: includes/class-bookey-grid.php:351
 msgid "mo"
 msgstr ""
 
-#: includes/class-bookey-grid.php:361
+#: includes/class-bookey-grid.php:354
 msgid "tu"
 msgstr ""
 
-#: includes/class-bookey-grid.php:364
+#: includes/class-bookey-grid.php:357
 msgid "we"
 msgstr ""
 
-#: includes/class-bookey-grid.php:367
+#: includes/class-bookey-grid.php:360
 msgid "th"
 msgstr ""
 
-#: includes/class-bookey-grid.php:370
+#: includes/class-bookey-grid.php:363
 msgid "fr"
 msgstr ""
 
-#: includes/class-bookey-grid.php:373
+#: includes/class-bookey-grid.php:366
 msgid "sa"
 msgstr ""
 
-#: includes/class-bookey-grid.php:376
+#: includes/class-bookey-grid.php:369
 msgid "su"
 msgstr ""
 
-#: includes/class-bookey-grid.php:393
+#: includes/class-bookey-grid.php:386
 msgid "All year"
 msgstr ""
 
-#: includes/class-bookey-grid.php:399
+#: includes/class-bookey-grid.php:392
 msgid "jan"
 msgstr ""
 
-#: includes/class-bookey-grid.php:402
+#: includes/class-bookey-grid.php:395
 msgid "feb"
 msgstr ""
 
-#: includes/class-bookey-grid.php:405
+#: includes/class-bookey-grid.php:398
 msgid "mar"
 msgstr ""
 
-#: includes/class-bookey-grid.php:408
+#: includes/class-bookey-grid.php:401
 msgid "apr"
 msgstr ""
 
-#: includes/class-bookey-grid.php:411
+#: includes/class-bookey-grid.php:404
 msgid "may"
 msgstr ""
 
-#: includes/class-bookey-grid.php:414
+#: includes/class-bookey-grid.php:407
 msgid "jun"
 msgstr ""
 
-#: includes/class-bookey-grid.php:417
+#: includes/class-bookey-grid.php:410
 msgid "jul"
 msgstr ""
 
-#: includes/class-bookey-grid.php:420
+#: includes/class-bookey-grid.php:413
 msgid "aug"
 msgstr ""
 
-#: includes/class-bookey-grid.php:423
+#: includes/class-bookey-grid.php:416
 msgid "sep"
 msgstr ""
 
-#: includes/class-bookey-grid.php:426
+#: includes/class-bookey-grid.php:419
 msgid "oct"
 msgstr ""
 
-#: includes/class-bookey-grid.php:429
+#: includes/class-bookey-grid.php:422
 msgid "nov"
 msgstr ""
 
-#: includes/class-bookey-grid.php:432
+#: includes/class-bookey-grid.php:425
 msgid "dec"
 msgstr ""
 
-#: includes/class-bookey-grid.php:471
+#: includes/class-bookey-grid.php:463
 msgid "Please set the following \"Website address\" in plugin settings: "
 msgstr ""
 
-#: includes/class-bookey-grid.php:474
+#: includes/class-bookey-grid.php:466
 msgid "BooKey remote options read error: Incorrect plugin key."
 msgstr ""
 
-#: includes/class-bookey-grid.php:477
+#: includes/class-bookey-grid.php:469
 msgid "Tariff is expired or not selected."
 msgstr ""
 
-#: includes/class-bookey-grid.php:480
+#: includes/class-bookey-grid.php:472
 msgid "BooKey server is unreachable!"
 msgstr ""
 
-#: includes/class-bookey-grid.php:483
+#: includes/class-bookey-grid.php:475
 msgid "BooKey server access error:"
 msgstr ""
 
-#: includes/class-bookey-grid.php:490
-msgid "Bookey Grid Plugin settings"
+#: includes/class-bookey-grid.php:482
+msgid "Bookey Grid Plugin Settings"
 msgstr ""
 
-#: includes/class-bookey-grid.php:498
+#: includes/class-bookey-grid.php:490
 msgid "Plugin Key"
 msgstr ""
 
-#: includes/class-bookey-grid.php:504
+#: includes/class-bookey-grid.php:496
 msgid ""
 "On submitting this form the BooKey server receives the plugin key and "
 "returns your account settings"
 msgstr ""
 
-#: includes/class-bookey-grid.php:508
+#: includes/class-bookey-grid.php:500
 msgid "Terms &amp; Conditions"
 msgstr ""
 
-#: includes/class-bookey-grid.php:517
+#: includes/class-bookey-grid.php:509
 msgid "Language"
 msgstr ""
 
-#: includes/class-bookey-grid.php:530
-msgid "Choose a language"
+#: includes/class-bookey-grid.php:522
+msgid "Choose table language"
 msgstr ""
 
-#: includes/class-bookey-grid.php:534
+#: includes/class-bookey-grid.php:526
 msgid "Login URL"
 msgstr ""
 
-#: includes/class-bookey-grid.php:540
+#: includes/class-bookey-grid.php:532
 msgid "Leave it empty if you use standard URL:"
 msgstr ""
 
-#: includes/class-bookey-grid.php:544
+#: includes/class-bookey-grid.php:536
 msgid "Your website visitors must be logged in for booking."
 msgstr ""
 
-#: includes/class-bookey-grid.php:549
-msgid "Show calendar"
+#: includes/class-bookey-grid.php:541
+msgid "Show Calendar"
 msgstr ""
 
-#: includes/class-bookey-grid.php:553
+#: includes/class-bookey-grid.php:545
 msgid "Show"
 msgstr ""
 
-#: includes/class-bookey-grid.php:556
+#: includes/class-bookey-grid.php:548
 msgid "Hide"
 msgstr ""
 
-#: includes/class-bookey-grid.php:559
+#: includes/class-bookey-grid.php:551
 msgid "Show or hide calendar and extra information on page"
 msgstr ""
 
-#: includes/class-bookey-grid.php:563
-msgid "Table size"
+#: includes/class-bookey-grid.php:555
+msgid "Table Size"
 msgstr ""
 
-#: includes/class-bookey-grid.php:567
+#: includes/class-bookey-grid.php:559
 msgid "Week"
 msgstr ""
 
-#: includes/class-bookey-grid.php:573
+#: includes/class-bookey-grid.php:565
 msgid "Only `Week` option is available in basic subscription"
 msgstr ""
 
-#: includes/class-bookey-grid.php:576
+#: includes/class-bookey-grid.php:568
 msgid "Two weeks"
 msgstr ""
 
-#: includes/class-bookey-grid.php:579
+#: includes/class-bookey-grid.php:571
 msgid "Month"
 msgstr ""
 
-#: includes/class-bookey-grid.php:586
+#: includes/class-bookey-grid.php:578
 msgid "Select static table size"
 msgstr ""
 
-#: includes/class-bookey-grid.php:595
+#: includes/class-bookey-grid.php:583
+msgid "Plugin Server Side Settings"
+msgstr ""
+
+#: includes/class-bookey-grid.php:587
 msgid "Minimal Booking Step"
 msgstr ""
 
-#: includes/class-bookey-grid.php:599
+#: includes/class-bookey-grid.php:591
 msgid "minutes"
 msgstr ""
 
-#: includes/class-bookey-grid.php:603
+#: includes/class-bookey-grid.php:595
 msgid "Working Hours"
 msgstr ""
 
-#: includes/class-bookey-grid.php:611
+#: includes/class-bookey-grid.php:603
 msgid "Working Days"
 msgstr ""
 
-#: includes/class-bookey-grid.php:617
+#: includes/class-bookey-grid.php:609
 msgid "Working Months"
 msgstr ""
 
-#: includes/class-bookey-grid.php:625
+#: includes/class-bookey-grid.php:617
 msgid "BooKey Website"
 msgstr ""
 
-#: includes/class-bookey-grid.php:630
+#: includes/class-bookey-grid.php:622
 msgid "Change plugin settings"
 msgstr ""
 
-#: includes/class-bookey-grid.php:637
+#: includes/class-bookey-grid.php:629
 msgid "Save Changes"
 msgstr ""
 

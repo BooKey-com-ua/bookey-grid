@@ -580,7 +580,7 @@ class Bookey_Grid {
 					</tr>
 					<tr>
 						<th scope="row" colspan="2">
-							<?php echo esc_html_e( 'BooKey Server Side Settings', 'bookey-grid' ); ?>
+							<?php echo esc_html_e( 'Plugin Server Side Settings', 'bookey-grid' ); ?>
 						</th>
 					</tr>
 					<tr>
