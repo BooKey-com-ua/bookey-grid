@@ -2,7 +2,7 @@
 Contributors: bookeyltd, andreyk
 Tags: hourly, booking, notifications
 Requires PHP: 7.4
-Requires at least: 6.6.0
+Requires at least: 6.6
 Tested up to: 6.7
 Version: 0.2.0
 Stable tag: 0.2.0

@@ -3,8 +3,8 @@
  * Plugin Name: BooKey Table
  * Description: BooKey hourly booking table.
  * Version: 0.2.0
- * Requires at least: 6.6.0
- * Tested up to: 6.6.2
+ * Requires at least: 6.6
+ * Tested up to: 6.7
  * Requires PHP: 7.4
  * Author: BooKey
  * Author URI: https://bookey.ltd

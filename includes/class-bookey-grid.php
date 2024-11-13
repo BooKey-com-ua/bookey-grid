@@ -479,7 +479,7 @@ class Bookey_Grid {
 			</p>
 		</div>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'Bookey Grid Plugin Settings', 'bookey-grid' ); ?></h1>
+			<h1><?php esc_html_e( 'BooKey Grid Plugin Settings', 'bookey-grid' ); ?></h1>
 
 			<form method="POST" action="options.php">
 				<?php settings_fields( self::OPTION_NAME ); ?>
