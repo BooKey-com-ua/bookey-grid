@@ -18,13 +18,6 @@ class Bookey_Grid {
 	private const OPTION_NAME = 'bookeyltd_settings';
 
 	/**
-	 *  The plugin version.
-	 *
-	 * @const string
-	 */
-	private const VERSION = '0.2.0';
-
-	/**
 	 * Default settings of the plugin.
 	 *
 	 * @const array
@@ -88,25 +81,9 @@ class Bookey_Grid {
 	 * @return string
 	 */
 	public function shortcode() {
-		wp_register_script(
-			'bookey-build-view-script',
-			plugins_url( 'bookey-grid' ) . 'build/frontend.js',
-			array( 'react', 'react-dom', 'react-jsx-runtime' ),
-			self::VERSION,
-			array( 'in_footer' => true )
-		);
-
 		wp_enqueue_script( 'bookey-build-view-script' );
-
-		wp_enqueue_style(
-			'bookey-build-style',
-			plugins_url( 'bookey-grid' ) . '/build/frontend.css',
-			self::VERSION,
-			array( 'in_footer' => true )
-		);
-
+		wp_enqueue_style( 'bookey-build-style' );
 		ob_start();
-
 		include dirname( __DIR__ ) . '/build/render.php';
 
 		return ob_get_clean();
@@ -162,6 +139,7 @@ class Bookey_Grid {
 			);
 		}
 		$data['lastCheck'] = time();
+
 		return array_merge( $settings, $data );
 	}
 
