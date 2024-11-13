@@ -68,6 +68,7 @@ in next 24 hours or by immediate settings update after pressing 'Save Settings' 
 The plugin `build` folder contains only files built with npm. To get source code please visit plugin [GitHub](https://github.com/BooKey-com-ua/bookey-grid) page.
 
 The project folders structure includes:
+
 * `build` folder contains compiled files;
 * `includes` folder contains WordPress actions and filters file;
 * `languages` folder contains plugin multilingual support files;
