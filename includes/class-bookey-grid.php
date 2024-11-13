@@ -13,9 +13,9 @@ class Bookey_Grid {
 	/**
 	 * Plugin option name.
 	 *
-	 * @const string Stores the plugin settings.
+	 * @const string
 	 */
-	private const OPTION_NAME = 'bookey_grid_options';
+	private const OPTION_NAME = 'bookeyltd_settings';
 
 	/**
 	 *  The plugin version.
@@ -58,10 +58,10 @@ class Bookey_Grid {
 	 * Bookey_Grid constructor.
 	 */
 	public function __construct() {
+		load_plugin_textdomain( 'bookey-grid', false, basename( dirname( __DIR__ ) ) . '/languages' );
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'init', array( $this, 'register_custom_block' ) );
-		add_action( 'init', array( $this, 'set_language' ) );
 		add_action( 'rest_api_init', array( $this, 'rest_api_init' ) );
 		add_shortcode( 'bookey_grid', array( $this, 'shortcode' ) );
 
@@ -163,13 +163,6 @@ class Bookey_Grid {
 		}
 		$data['lastCheck'] = time();
 		return array_merge( $settings, $data );
-	}
-
-	/**
-	 * Internationalization.
-	 */
-	public function set_language() {
-		load_plugin_textdomain( 'bookey-grid', false, basename( dirname( __DIR__ ) ) . '/languages' );
 	}
 
 	/**
@@ -460,7 +453,6 @@ class Bookey_Grid {
 		$parts = explode( ',', $option['workingHours'] );
 		$from  = $parts[0];
 		$to    = $parts[1];
-
 		?>
 		<div class="<?php echo 1 === (int) $option['error'] ? 'notice notice-error is-dismissible' : 'hidden'; ?>">
 			<p>
@@ -487,7 +479,7 @@ class Bookey_Grid {
 			</p>
 		</div>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'Bookey Grid Plugin settings', 'bookey-grid' ); ?></h1>
+			<h1><?php esc_html_e( 'Bookey Grid Plugin Settings', 'bookey-grid' ); ?></h1>
 
 			<form method="POST" action="options.php">
 				<?php settings_fields( self::OPTION_NAME ); ?>
@@ -527,7 +519,7 @@ class Bookey_Grid {
 									Русский
 								</option>
 							</select>
-							<p class="description"><?php esc_html_e( 'Choose a language', 'bookey-grid' ); ?></p>
+							<p class="description"><?php esc_html_e( 'Choose table language', 'bookey-grid' ); ?></p>
 						</td>
 					</tr>
 					<tr>
@@ -546,7 +538,7 @@ class Bookey_Grid {
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Show calendar', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Show Calendar', 'bookey-grid' ); ?></th>
 						<td>
 							<select name="<?php self::input_name( 'calendar' ); ?>">
 								<option value=true <?php echo 'true' === $option['calendar'] ? 'selected' : ''; ?>>
@@ -560,7 +552,7 @@ class Bookey_Grid {
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Table size', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Table Size', 'bookey-grid' ); ?></th>
 						<td>
 							<select name="<?php self::input_name( 'days' ); ?>">
 								<option value="7" <?php echo '7' === $option['days'] ? 'selected' : ''; ?>>
@@ -588,7 +580,7 @@ class Bookey_Grid {
 					</tr>
 					<tr>
 						<th scope="row" colspan="2">
-							BooKey server side settings
+							<?php echo esc_html_e( 'BooKey Server Side Settings', 'bookey-grid' ); ?>
 						</th>
 					</tr>
 					<tr>
