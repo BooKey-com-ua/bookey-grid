@@ -10,7 +10,7 @@
  * Author URI: https://bookey.ltd
  * License: GPLv2 or later
  * License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: bookey-grid
+ * Text Domain: bookey-table
  * Domain Path: /languages
  *
  * @package bookey-grid
