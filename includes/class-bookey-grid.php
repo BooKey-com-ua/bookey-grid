@@ -5,6 +5,10 @@
  * @package bookey-grid
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * Class Bookey_Grid
  */
@@ -51,7 +55,7 @@ class Bookey_Grid {
 	 * Bookey_Grid constructor.
 	 */
 	public function __construct() {
-		load_plugin_textdomain( 'bookey-grid', false, basename( dirname( __DIR__ ) ) . '/languages' );
+		load_plugin_textdomain( 'bookey-table', false, basename( dirname( __DIR__ ) ) . '/languages' );
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'init', array( $this, 'register_custom_block' ) );
@@ -231,8 +235,8 @@ class Bookey_Grid {
 	 */
 	public function admin_menu() {
 		add_menu_page(
-			__( 'BooKey Settings Page', 'bookey-grid' ),
-			__( 'BooKey', 'bookey-grid' ),
+			__( 'BooKey Settings Page', 'bookey-table' ),
+			__( 'BooKey', 'bookey-table' ),
 			'manage_options',
 			'bookey_table',
 			array( $this, 'options_page' ),
@@ -320,31 +324,31 @@ class Bookey_Grid {
 	private static function form_days( $days = '' ) {
 		$days_array = explode( ',', $days );
 		if ( '' === $days || count( $days_array ) === 7 ) {
-			esc_html_e( 'All week', 'bookey-grid' );
+			esc_html_e( 'All week', 'bookey-table' );
 		} else {
 			sort( $days_array );
 
 			foreach ( $days_array as $value ) {
 				if ( '1' === $value ) {
-					esc_html_e( 'mo', 'bookey-grid' );
+					esc_html_e( 'mo', 'bookey-table' );
 				}
 				if ( '2' === $value ) {
-					esc_html_e( 'tu', 'bookey-grid' );
+					esc_html_e( 'tu', 'bookey-table' );
 				}
 				if ( '3' === $value ) {
-					esc_html_e( 'we', 'bookey-grid' );
+					esc_html_e( 'we', 'bookey-table' );
 				}
 				if ( '4' === $value ) {
-					esc_html_e( 'th', 'bookey-grid' );
+					esc_html_e( 'th', 'bookey-table' );
 				}
 				if ( '5' === $value ) {
-					esc_html_e( 'fr', 'bookey-grid' );
+					esc_html_e( 'fr', 'bookey-table' );
 				}
 				if ( '6' === $value ) {
-					esc_html_e( 'sa', 'bookey-grid' );
+					esc_html_e( 'sa', 'bookey-table' );
 				}
 				if ( '7' === $value ) {
-					esc_html_e( 'su', 'bookey-grid' );
+					esc_html_e( 'su', 'bookey-table' );
 				}
 				if ( $value < 7 ) {
 					echo ', ';
@@ -361,46 +365,46 @@ class Bookey_Grid {
 	private static function form_months( $months = '' ) {
 		$months_array = explode( ',', $months );
 		if ( '' === $months || count( $months_array ) === 12 ) {
-			esc_html_e( 'All year', 'bookey-grid' );
+			esc_html_e( 'All year', 'bookey-table' );
 		} else {
 			sort( $months_array );
 
 			foreach ( $months_array as $value ) {
 				if ( '1' === $value ) {
-					esc_html_e( 'jan', 'bookey-grid' );
+					esc_html_e( 'jan', 'bookey-table' );
 				}
 				if ( '2' === $value ) {
-					esc_html_e( 'feb', 'bookey-grid' );
+					esc_html_e( 'feb', 'bookey-table' );
 				}
 				if ( '3' === $value ) {
-					esc_html_e( 'mar', 'bookey-grid' );
+					esc_html_e( 'mar', 'bookey-table' );
 				}
 				if ( '4' === $value ) {
-					esc_html_e( 'apr', 'bookey-grid' );
+					esc_html_e( 'apr', 'bookey-table' );
 				}
 				if ( '5' === $value ) {
-					esc_html_e( 'may', 'bookey-grid' );
+					esc_html_e( 'may', 'bookey-table' );
 				}
 				if ( '6' === $value ) {
-					esc_html_e( 'jun', 'bookey-grid' );
+					esc_html_e( 'jun', 'bookey-table' );
 				}
 				if ( '7' === $value ) {
-					esc_html_e( 'jul', 'bookey-grid' );
+					esc_html_e( 'jul', 'bookey-table' );
 				}
 				if ( '8' === $value ) {
-					esc_html_e( 'aug', 'bookey-grid' );
+					esc_html_e( 'aug', 'bookey-table' );
 				}
 				if ( '9' === $value ) {
-					esc_html_e( 'sep', 'bookey-grid' );
+					esc_html_e( 'sep', 'bookey-table' );
 				}
 				if ( '10' === $value ) {
-					esc_html_e( 'oct', 'bookey-grid' );
+					esc_html_e( 'oct', 'bookey-table' );
 				}
 				if ( '11' === $value ) {
-					esc_html_e( 'nov', 'bookey-grid' );
+					esc_html_e( 'nov', 'bookey-table' );
 				}
 				if ( '12' === $value ) {
-					esc_html_e( 'dec', 'bookey-grid' );
+					esc_html_e( 'dec', 'bookey-table' );
 				}
 				if ( $value < 12 ) {
 					echo ', ';
@@ -438,26 +442,26 @@ class Bookey_Grid {
 				if ( 1 === (int) $option['error'] ) {
 					switch ( $option['errorMessage'] ) {
 						case 'address':
-							echo esc_html( __( 'Please set the following "Website address" in plugin settings: ', 'bookey-grid' ) . ' ' . wp_parse_url( get_site_url(), PHP_URL_HOST ) );
+							echo esc_html( __( 'Please set the following "Website address" in plugin settings: ', 'bookey-table' ) . ' ' . wp_parse_url( get_site_url(), PHP_URL_HOST ) );
 							break;
 						case 'key':
-							echo esc_html( __( 'BooKey remote options read error: Incorrect plugin key.', 'bookey-grid' ) );
+							echo esc_html( __( 'BooKey remote options read error: Incorrect plugin key.', 'bookey-table' ) );
 							break;
 						case 'tariff':
-							echo esc_html( __( 'Tariff is expired or not selected.', 'bookey-grid' ) );
+							echo esc_html( __( 'Tariff is expired or not selected.', 'bookey-table' ) );
 							break;
 						case 'unreachable':
-							echo esc_html( __( 'BooKey server is unreachable!', 'bookey-grid' ) );
+							echo esc_html( __( 'BooKey server is unreachable!', 'bookey-table' ) );
 							break;
 						default:
-							echo esc_html( __( 'BooKey server access error:', 'bookey-grid' ) . $option['errorMessage'] );
+							echo esc_html( __( 'BooKey server access error:', 'bookey-table' ) . $option['errorMessage'] );
 					}
 				}
 				?>
 			</p>
 		</div>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'BooKey Grid Plugin Settings', 'bookey-grid' ); ?></h1>
+			<h1><?php esc_html_e( 'BooKey Grid Plugin Settings', 'bookey-table' ); ?></h1>
 
 			<form method="POST" action="options.php">
 				<?php settings_fields( self::OPTION_NAME ); ?>
@@ -465,17 +469,17 @@ class Bookey_Grid {
 				<table class="form-table" role="presentation">
 
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Plugin Key', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Plugin Key', 'bookey-table' ); ?></th>
 						<td>
 							<input type="text" size="32"
 									name="<?php self::input_name( 'ownerKey' ); ?>"
 									value="<?php echo esc_attr( $option['ownerKey'] ); ?>">
 							<p class="description">
-								<?php esc_html_e( 'On submitting this form the BooKey server receives the plugin key and returns your account settings', 'bookey-grid' ); ?>
+								<?php esc_html_e( 'On submitting this form the BooKey server receives the plugin key and returns your account settings', 'bookey-table' ); ?>
 							</p>
 							<p class="description">
 								<a target="_blank"
-									href="https://bookey.ltd/en/docs/terms"><?php esc_html_e( 'Terms &amp; Conditions', 'bookey-grid' ); ?></a>
+									href="https://bookey.ltd/en/docs/terms"><?php esc_html_e( 'Terms &amp; Conditions', 'bookey-table' ); ?></a>
 							</p>
 						</td>
 					</tr>
@@ -484,7 +488,7 @@ class Bookey_Grid {
 				<table style="<?php echo 1 === (int) $option['error'] ? 'display: none;' : ''; ?>"
 						class="form-table" role="presentation">
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Language', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Language', 'bookey-table' ); ?></th>
 						<td>
 							<select name="<?php self::input_name( 'language' ); ?>">
 								<option value="en" <?php echo 'en' === $option['language'] ? 'selected' : ''; ?>>
@@ -497,80 +501,80 @@ class Bookey_Grid {
 									Русский
 								</option>
 							</select>
-							<p class="description"><?php esc_html_e( 'Choose table language', 'bookey-grid' ); ?></p>
+							<p class="description"><?php esc_html_e( 'Choose table language', 'bookey-table' ); ?></p>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Login URL', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Login URL', 'bookey-table' ); ?></th>
 						<td>
 							<input type="text" size="32"
 									name="<?php self::input_name( 'loginPage' ); ?>"
 									value="<?php echo esc_attr( $option['loginPage'] ); ?>">
 							<p class="description">
-								<?php esc_html_e( 'Leave it empty if you use standard URL:', 'bookey-grid' ); ?>
+								<?php esc_html_e( 'Leave it empty if you use standard URL:', 'bookey-table' ); ?>
 								<code><?php echo esc_html( wp_login_url() ); ?></code>
 							</p>
 							<p class="description">
-								<?php esc_html_e( 'Your website visitors must be logged in for booking.', 'bookey-grid' ); ?>
+								<?php esc_html_e( 'Your website visitors must be logged in for booking.', 'bookey-table' ); ?>
 							</p>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Show Calendar', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Show Calendar', 'bookey-table' ); ?></th>
 						<td>
 							<select name="<?php self::input_name( 'calendar' ); ?>">
 								<option value=true <?php echo 'true' === $option['calendar'] ? 'selected' : ''; ?>>
-									<?php esc_html_e( 'Show', 'bookey-grid' ); ?>
+									<?php esc_html_e( 'Show', 'bookey-table' ); ?>
 								</option>
 								<option value=false <?php echo 'false' === $option['calendar'] ? 'selected' : ''; ?>>
-									<?php esc_html_e( 'Hide', 'bookey-grid' ); ?>
+									<?php esc_html_e( 'Hide', 'bookey-table' ); ?>
 								</option>
 							</select>
-							<p class="description"><?php esc_html_e( 'Show or hide calendar and extra information on page', 'bookey-grid' ); ?></p>
+							<p class="description"><?php esc_html_e( 'Show or hide calendar and extra information on page', 'bookey-table' ); ?></p>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Table Size', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Table Size', 'bookey-table' ); ?></th>
 						<td>
 							<select name="<?php self::input_name( 'days' ); ?>">
 								<option value="7" <?php echo '7' === $option['days'] ? 'selected' : ''; ?>>
-									<?php esc_html_e( 'Week', 'bookey-grid' ); ?>
+									<?php esc_html_e( 'Week', 'bookey-table' ); ?>
 								</option>
 								<?php
 								if ( empty( $option['subscription'] ) || 'demo' === $option['subscription'] ) :
 									?>
 							</select>
-							<span class="description"><?php esc_html_e( 'Only `Week` option is available in basic subscription', 'bookey-grid' ); ?></span>
+							<span class="description"><?php esc_html_e( 'Only `Week` option is available in basic subscription', 'bookey-table' ); ?></span>
 							<?php else : ?>
 								<option value="14" <?php echo '14' === $option['days'] ? 'selected' : ''; ?>>
-									<?php esc_html_e( 'Two weeks', 'bookey-grid' ); ?>
+									<?php esc_html_e( 'Two weeks', 'bookey-table' ); ?>
 								</option>
 								<option value="30" <?php echo '30' === $option['days'] ? 'selected' : ''; ?>>
-									<?php esc_html_e( 'Month', 'bookey-grid' ); ?>
+									<?php esc_html_e( 'Month', 'bookey-table' ); ?>
 								</option>
 								</select>
 
 								<?php
 							endif;
 							?>
-							<p class="description"><?php esc_html_e( 'Select static table size', 'bookey-grid' ); ?></p>
+							<p class="description"><?php esc_html_e( 'Select static table size', 'bookey-table' ); ?></p>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" colspan="2">
-							<?php echo esc_html_e( 'Plugin Server Side Settings', 'bookey-grid' ); ?>
+							<?php echo esc_html_e( 'Plugin Server Side Settings', 'bookey-table' ); ?>
 						</th>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Minimal Booking Step', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Minimal Booking Step', 'bookey-table' ); ?></th>
 						<td>
 							<?php echo esc_html( $option['minimalBookingPeriod'] ); ?>
 
-							<?php esc_html_e( 'minutes', 'bookey-grid' ); ?>
+							<?php esc_html_e( 'minutes', 'bookey-table' ); ?>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Working Hours', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Working Hours', 'bookey-table' ); ?></th>
 						<td>
 							<div> <?php echo esc_html( $from ); ?>:00
 								- <?php echo esc_html( $to ); ?>:00
@@ -578,13 +582,13 @@ class Bookey_Grid {
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Working Days', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Working Days', 'bookey-table' ); ?></th>
 						<td>
 							<div> <?php self::form_days( $option['workingDays'] ); ?></div>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Working Months', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'Working Months', 'bookey-table' ); ?></th>
 						<td>
 							<div> <?php self::form_months( $option['workingMonths'] ); ?></div>
 						</td>
@@ -592,19 +596,19 @@ class Bookey_Grid {
 				</table>
 				<table class="form-table" role="presentation">
 					<tr>
-						<th scope="row"><?php esc_html_e( 'BooKey Website', 'bookey-grid' ); ?></th>
+						<th scope="row"><?php esc_html_e( 'BooKey Website', 'bookey-table' ); ?></th>
 						<td>
 							<a href="https://bookey.ltd/plugin"
 								target="_blank">
 								<?php
-								esc_html_e( 'Change plugin settings', 'bookey-grid' );
+								esc_html_e( 'Change plugin settings', 'bookey-table' );
 								?>
 							</a>
 						</td>
 					</tr>
 
 				</table>
-				<?php submit_button( esc_html( __( 'Save Changes', 'bookey-grid' ) ) ); ?>
+				<?php submit_button( esc_html( __( 'Save Changes', 'bookey-table' ) ) ); ?>
 			</form>
 		</div>
 		<?php
